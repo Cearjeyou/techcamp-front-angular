@@ -1,0 +1,7 @@
+<ng-container *ngIf="datos">
+    <section class="container">
+        <ng-container *ngFor="let dato of datos">
+            <app-card [nombre]="dato.name" [ubicacion]="dato.location.name" [urlImg]="dato.image" [id]="dato.id"></app-card>
+        </ng-container>
+    </section>
+</ng-container>

@@ -1,0 +1,52 @@
+.content {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content img {
+    width: 25vw;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.content-section {
+    padding: 1rem;
+}
+
+.content-section div {
+    box-sizing: border-box;
+    width: 50vw;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(115, 244, 98);
+}
+
+.content-table {
+    margin: auto;
+    width: 25vw;
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 1.5rem auto;
+    width: 50vw;
+}
+
+.content ul li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+}
+
+.content ul li a:hover {
+    box-sizing: border-box;
+    background-color: rgb(0, 177, 202);
+    border-radius: 1rem;
+    color: white;
+}

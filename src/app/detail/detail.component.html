@@ -1,0 +1,33 @@
+<article class="content">
+    <section class="content-section">
+        <ng-container *ngIf="detail">
+            <div>
+                <img src={{detail.image}} alt="image">
+                <h2>{{detail.name}}</h2>
+                <table class="content-table">
+                    <tr>
+                        <th>Especie:</th>
+                        <td>{{detail.species}}</td>
+                    </tr>
+                    <tr>
+                        <th>Género:</th>
+                        <td>{{detail.gender}}</td>
+                    </tr>
+                    <tr>
+                        <th>Origen:</th>
+                        <td>{{detail.origin.name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Ubicación:</th>
+                        <td>{{detail.location.name}}</td>
+                    </tr>
+                </table>
+            </div>
+            <ul>
+                <li><a [routerLink]="['/items', name]">{{name}}</a></li>
+                <li><a [routerLink]="['/spec', specie]">{{specie}}</a></li>
+                <li><a [routerLink]="['/items', name, specie]">{{name}} and {{specie}}</a></li>
+            </ul>
+        </ng-container>
+    </section>
+</article>

@@ -1,0 +1,62 @@
+.card {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1rem;
+    align-items: center;
+    text-wrap: balance;
+    box-shadow: 0 0 10px rgb(115, 244, 98);
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px rgb(115, 244, 98);
+    border: 1px solid rgb(115, 244, 98);
+}
+
+.card img {
+    width: 78%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img {
+    animation: moveImg 2s ease-in-out infinite;
+}
+
+.card a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: blue;
+}
+
+.card a:hover {
+    background-color: rgb(0, 177, 202);
+    border-radius: 1rem;
+    color: white;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.1rem;
+    gap: 1.5px;
+}
+
+.location span {
+    font-size: small;
+}
+
+@keyframes moveImg {
+    0%, 100% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+}
